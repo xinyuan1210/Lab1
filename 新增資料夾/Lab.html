@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information and Hobby/Skills Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 100px;
+      border-radius: 50%;
+    }
+
+    textarea {
+      width: calc(100% - 24px);
+      box-sizing: border-box;
+      padding: 8px;
+      margin: 8px 0;
+    }
+
+    input[type="date"], input[type="email"] {
+      width: calc(100% - 24px);
+      box-sizing: border-box;
+      padding: 8px;
+      margin: 8px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td colspan="3">
+        <caption style="text-align: center; font-size: 18px;">About--111305086</caption>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">
+        <img src="下載.png" alt="Personal Photo">
+        <p><strong>Personal Photo</strong></p>
+      </td>
+      <td>Name:</td>
+      <td>
+        <!-- Insert textarea for Name -->
+        <textarea placeholder="Enter your name"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <!-- Insert radio buttons for Gender -->
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </td>
+    </tr>
+    <tr>
+      <td>E-mail:</td>
+      <td>
+        <!-- Insert email input -->
+        <input type="email" name="email" placeholder="Enter your email">
+      </td>
+    </tr>
+    <tr>
+      <td>County:</td>
+      <td>
+        <!-- Insert dropdown list for County -->
+        <select>
+          <option value="Taipei">Taipei</option>
+          <option value="Tainan">Tainan</option>
+          <option value="Taichung">Taichung</option>
+          <option value="Taoyuan">Taoyuan</option>
+        </select>
+      </td>
+      <td>Birthday:</td>
+      <td>
+        <!-- Insert date input for Birthday -->
+        <input type="date" name="birthday">
+      </td>
+    </tr>
+  </table>
+
+
+  <table>
+    <!-- <caption>Hobby and Skills Table</caption> -->
+    <tr>
+      <td>Hobby</td>
+      <td>
+        <!-- Insert checkboxes for Hobby -->
+        <label><input type="checkbox" name="hobby" value="swimming"> Swimming</label>
+        <label><input type="checkbox" name="hobby" value="volleyball"> Volleyball</label>
+        <label><input type="checkbox" name="hobby" value="movie"> Movie</label>
+        <label><input type="checkbox" name="hobby" value="game"> Game</label>
+        <label><input type="checkbox" name="hobby" value="sleep"> Sleep</label>
+      </td>
+    </tr>
+    <tr>
+      <td>Skill</td>
+      <td>
+        <!-- Insert checkboxes for Skills -->
+        <label><input type="checkbox" name="skill" value="java"> Java</label>
+        <label><input type="checkbox" name="skill" value="html"> HTML</label>
+        <label><input type="checkbox" name="skill" value="python"> Python</label>
+        <label><input type="checkbox" name="skill" value="ms_office"> Microsoft Office</label>
+        <label><input type="checkbox" name="skill" value="premiere"> Premiere</label>
+      </td>
+    </tr>
+    <tr>
+      <td>Say something</td>
+      <td>
+        <!-- Insert textarea for saying something -->
+        <textarea placeholder="Say something here."></textarea>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
